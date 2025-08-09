@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry, My Love - A Love Story Rekindled</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Hearts -->
+    <div class="floating-hearts">
+        <div class="heart">♥</div>
+        <div class="heart">♥</div>
+        <div class="heart">♥</div>
+        <div class="heart">♥</div>
+        <div class="heart">♥</div>
+        <div class="heart">♥</div>
+        <div class="heart">♥</div>
+        <div class="heart">♥</div>
+        <div class="heart">♥</div>
+        <div class="heart">♥</div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+            <h1 class="main-title">I'm Sorry, Hania</h1>
+            <p class="subtitle">Every word here comes from the deepest part of my heart</p>
+            
+            <div class="hero-message">
+                <p class="heartfelt-text">I know I hurt you, and I know sorry isn't enough - but it's where I need to start. This isn't just a website, it's my heart laid bare for you to see.</p>
+            </div>
+            
+            <div class="intro-card">
+                <h3>What You'll Find Here</h3>
+                <div class="preview-items">
+                    <div class="preview-item">
+                        <span class="preview-icon">•</span>
+                        <span>Personal letters I wrote during sleepless nights</span>
+                    </div>
+                    <div class="preview-item">
+                        <span class="preview-icon">•</span>
+                        <span>Our journey and the moments that matter</span>
+                    </div>
+                    <div class="preview-item">
+                        <span class="preview-icon">•</span>
+                        <span>A special message just for you</span>
+                    </div>
+                    <div class="preview-item">
+                        <span class="preview-icon">•</span>
+                        <span>Promises for our future together</span>
+                    </div>
+                </div>
+                <p class="intro-footer">Take your time. I'll wait as long as it takes.</p>
+                <button class="cta-button" onclick="document.querySelector('#apology-letters').scrollIntoView({behavior: 'smooth'})">
+                    Begin Reading
+                </button>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- Apology Letters Section -->
+    <section id="apology-letters" class="section">
+        <div class="container">
+            <h2>Letters from My Heart</h2>
+            <p class="section-subtitle">I wrote these for you during the longest nights without you. Click each one to read my heart.</p>
+            <div class="progress-tracker">
+                <span id="letters-read">0</span> of 4 letters read
+            </div>
+            
+            <div class="letters-grid">
+                <div class="letter-card" onclick="toggleLetter(this, 0)">
+                    <div class="letter-header">
+                        <div class="letter-icon"></div>
+                        <h3>I'm Sorry for Hurting You</h3>
+                        <div class="star hidden">★</div>
+                    </div>
+                    <div class="letter-content">
+                        <p>I know my words cut deep that night. I was frustrated and scared, but that's no excuse for hurting the person I love most. I'm truly sorry for the pain I caused you.</p>
+                    </div>
+                    <div class="letter-action">Click to read my apology</div>
+                </div>
+
+                <div class="letter-card" onclick="toggleLetter(this, 1)">
+                    <div class="letter-header">
+                        <div class="letter-icon"></div>
+                        <h3>I Miss Your Laugh</h3>
+                        <div class="star hidden">★</div>
+                    </div>
+                    <div class="letter-content">
+                        <p>The silence without your laughter is deafening. I miss how your eyes light up when you smile, how you make even ordinary moments feel magical. I miss us.</p>
+                    </div>
+                    <div class="letter-action">Click to read my apology</div>
+                </div>
+
+                <div class="letter-card" onclick="toggleLetter(this, 2)">
+                    <div class="letter-header">
+                        <div class="letter-icon"></div>
+                        <h3>I'm Learning and Growing</h3>
+                        <div class="star hidden">★</div>
+                    </div>
+                    <div class="letter-content">
+                        <p>I've been working on myself every day since you left. I'm reading, reflecting, and learning how to be the partner you deserve. Change takes time, but I'm committed.</p>
+                    </div>
+                    <div class="letter-action">Click to read my apology</div>
+                </div>
+
+                <div class="letter-card" onclick="toggleLetter(this, 3)">
+                    <div class="letter-header">
+                        <div class="letter-icon"></div>
+                        <h3>You Are My Everything</h3>
+                        <div class="star hidden">★</div>
+                    </div>
+                    <div class="letter-content">
+                        <p>I realize now that you're not just my girlfriend - you're my best friend, my confidant, my future. Losing you made me understand how precious our love truly is.</p>
+                    </div>
+                    <div class="letter-action">Click to read my apology</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section timeline-section">
+        <div class="container">
+            <h2>My Journey Back to You</h2>
+            <div class="timeline">
+                <div class="timeline-item" onclick="toggleTimelineItem(this, 0)">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="IMG_8473-up0iM1vl.jpeg" alt="Heartbreak" class="timeline-image">
+                            <div>
+                                <h3>The Day My World Stopped</h3>
+                                <p class="timeline-action">Click to feel my pain</p>
+                            </div>
+                        </div>
+                        <div class="timeline-description">
+                            <p>I still remember the exact moment you walked away. It felt like my heart shattered into a million pieces. Every day since then has been a reminder of what I lost.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" onclick="toggleTimelineItem(this, 1)">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="IMG_8474-Clj2LmkV.jpeg" alt="Reflection" class="timeline-image">
+                            <div>
+                                <h3>Reflecting on Our Love</h3>
+                                <p class="timeline-action">Click to see my thoughts</p>
+                            </div>
+                        </div>
+                        <div class="timeline-description">
+                            <p>I've spent countless hours replaying our memories, the laughter, the quiet moments, the dreams we shared. I realized how much I took for granted.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" onclick="toggleTimelineItem(this, 2)">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="IMG_8475-B9i-oIGZ.jpeg" alt="Growth" class="timeline-image">
+                            <div>
+                                <h3>My Promise to Change</h3>
+                                <p class="timeline-action">Click to see my efforts</p>
+                            </div>
+                        </div>
+                        <div class="timeline-description">
+                            <p>I'm not the same person who hurt you. I've been working on myself, learning to be better, to be the man you deserve. This isn't just words, it's a commitment.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" onclick="toggleTimelineItem(this, 3)">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="IMG_8476-Cn5FQhZq.jpeg" alt="Hope" class="timeline-image">
+                            <div>
+                                <h3>Fighting for Our Future</h3>
+                                <p class="timeline-action">Click to see my hope</p>
+                            </div>
+                        </div>
+                        <div class="timeline-description">
+                            <p>I'm ready to fight for us, for our future, for the beautiful life we can rebuild together. Please, just one more chance to show you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="section">
+        <div class="container">
+            <h2>A Special Message for You</h2>
+            <div class="video-container">
+                <video id="love-video" controls class="love-video">
+                    <source src="hania-asim-1-mDwIVmW_.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div id="video-message" class="video-message hidden">
+                    <p>"Every moment without you feels incomplete. I've learned that love isn't just about the good times - it's about fighting for each other when things get tough. I'm ready to fight for us, for our future, for the love we built together. Please give me another chance to show you how much you mean to me."</p>
+                    <div class="signature">- With all my love</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promises Section -->
+    <section id="promises" class="section">
+        <div class="container">
+            <h2>My Promises to You</h2>
+            <div class="promises-card">
+                <p class="promises-subtitle">Click each promise to seal it with your heart</p>
+                
+                <div class="promises-list">
+                    <div class="promise-item" onclick="togglePromise(this, 0)">
+                        <div class="promise-checkbox"></div>
+                        <p>I promise to listen to you with my whole heart</p>
+                    </div>
+                    <div class="promise-item" onclick="togglePromise(this, 1)">
+                        <div class="promise-checkbox"></div>
+                        <p>I promise to never take your love for granted again</p>
+                    </div>
+                    <div class="promise-item" onclick="togglePromise(this, 2)">
+                        <div class="promise-checkbox"></div>
+                        <p>I promise to communicate better and share my feelings</p>
+                    </div>
+                    <div class="promise-item" onclick="togglePromise(this, 3)">
+                        <div class="promise-checkbox"></div>
+                        <p>I promise to support your dreams and be your biggest cheerleader</p>
+                    </div>
+                    <div class="promise-item" onclick="togglePromise(this, 4)">
+                        <div class="promise-checkbox"></div>
+                        <p>I promise to love you more deeply every single day</p>
+                    </div>
+                </div>
+                
+                <div id="all-promises-message" class="all-promises-message hidden">
+                    <h3>Thank you for believing in us!</h3>
+                    <p>These promises are sealed with love and will guide our journey together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Message Section -->
+    <section id="final-message" class="section">
+        <div class="container">
+            <img src="IMG_8481-OHCA8zZh.jpeg" alt="Us together" class="couple-image">
+            <h2>This Could Be Us Again</h2>
+            <div class="final-card">
+                <p>I know I can't undo the hurt I caused, but I can promise you a future where I never make the same mistakes again. I've learned that love isn't just a feeling - it's a choice we make every day. I choose you, I choose us, I choose to fight for our love.</p>
+                <p class="final-question">Will you give us another chance?</p>
+                <div class="final-buttons">
+                    <button class="btn-yes">Let's Talk</button>
+                    <button class="btn-maybe">I Need Time</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-heart"></div>
+            <p>Made with endless love and hope</p>
+            <div class="momentify-badge">Momentify</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
